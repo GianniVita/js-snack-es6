@@ -24,10 +24,15 @@ if (bici.length === 0) {
 let biciLeggera = bici[0];    
 //console.log(biciLeggera);
 // Scorrere tutte le bici:
-//  - SE il peso della bici corrente è minore del peso della biciLeggera, aggiorno biciLeggera
 for (let i = 0; i < bici.length; i++) {
-    const biciLeggera = bici[i];
+    //  - SE il peso della bici corrente è minore del peso della biciLeggera, aggiorno biciLeggera
+let biciLeggera = bici[0];    
+    if (bici[i].peso < biciLeggera.peso) {
+        
+    }
+ 
     
+
 }
 
 
