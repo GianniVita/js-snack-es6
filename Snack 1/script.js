@@ -22,14 +22,18 @@ if (bici.length === 0) {
 } else {
 //Impostare una variabile che possiamo chiamare 'biciLeggera' con il primo elemento
 let biciLeggera = bici[0];    
-console.log(biciLeggera);
+//console.log(biciLeggera);
+// Scorrere tutte le bici:
+//  - SE il peso della bici corrente è minore del peso della biciLeggera, aggiorno biciLeggera
+for (let i = 0; i < bici.length; i++) {
+    const biciLeggera = bici[i];
+    
+}
 
 
 }
 
 
 
-// Scorrere tutte le bici:
-//  - SE ilpeso della bici corrente è minore del peso della biciLeggera, aggiorno biciLeggera
 
 // Stampare biciLeggera (nome e peso) in un cosole.log()
