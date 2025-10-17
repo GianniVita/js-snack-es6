@@ -15,8 +15,19 @@ const bici = [
     { nome: "Colnago C64", peso: 6.9 },
     { nome: "Treck Emonda", peso: 7.0 }
 ];
-
+//console.log(bici);
+// Controlliamo SE in caso l'array è vuoto possiamo dire un messaggio nel console.log
+if (bici.length === 0) {
+    console.log("Non ci sono bici nell'array");
+} else {
 //Impostare una variabile che possiamo chiamare 'biciLeggera' con il primo elemento
+let biciLeggera = bici[0];    
+console.log(biciLeggera);
+
+
+}
+
+
 
 // Scorrere tutte le bici:
 //  - SE ilpeso della bici corrente è minore del peso della biciLeggera, aggiorno biciLeggera
