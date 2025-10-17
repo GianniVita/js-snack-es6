@@ -14,16 +14,36 @@ Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subit
 
 //Creare un array di oggetti di squadre, ogni oggetto ha nome, punti, "falliSubiti"
 const squadre = [
-    {nome:"AC Milan", punti: 0,fallisubiti: 0},
-    {nome:"Liverpool", punti: 0,fallisubiti: 0 },
-    {nome: "Atletico Madrid", punti: 0,fallisubiti: 0},
-    {nome:"Vasto Pro", punti: 0,fallisubiti: 0},
-    {nome:"Pescara", punti: 0,fallisubiti: 0},
-    {nome: "Napoli", punti: 0,fallisubiti: 0}
+    { nome: "AC Milan", punti: 0, fallisubiti: 0 },
+    { nome: "Liverpool", punti: 0, fallisubiti: 0 },
+    { nome: "Atletico Madrid", punti: 0, fallisubiti: 0 },
+    { nome: "Vasto Pro", punti: 0, fallisubiti: 0 },
+    { nome: "Pescara", punti: 0, fallisubiti: 0 },
+    { nome: "Napoli", punti: 0, fallisubiti: 0 }
 ];
-
+// Funzione per generare numeri randomici
 function randomNumber() {
     return Math.floor(Math.random() * 99) + 1;
+}
+
+// Creiamo un nuovo array vuoto che conterrà i nomi e i falli subiti
+const nomiFalli = []
+
+// Vogliamo inserire i numeri random nell'array di "squadre"
+for (let i = 0; i < squadre.length; i++) {
+    squadre[i].punti = randomNumber()
+    squadre[i].fallisubiti = randomNumber()
     
+    nomiFalli.push({
+        punti: squadre[i].punti,
+        fallisubiti: squadre[i].fallisubiti
+       
+    })
 
 }
+
+/* 
+for (let i = 0; i < squadre.length; i++) {
+} */
+
+console.log(nomiFalli);
