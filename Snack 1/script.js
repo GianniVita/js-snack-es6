@@ -28,7 +28,7 @@ if (bici.length === 0) {
 // Scorrere tutte le bici:
 for (let i = 0; i < bici.length; i++) {
     //  - SE il peso della bici corrente è minore del peso della biciLeggera, aggiorno biciLeggera
-let biciLeggera = bici[0];    
+//let biciLeggera = bici[0];    
     if (bici[i].peso < biciLeggera.peso) {
         biciLeggera = bici[i]
     }
